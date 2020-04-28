@@ -31,10 +31,11 @@ const Map = (props) => {
 }
 
 Map.propTypes = {
-  center: PropTypes.arrayOf(PropTypes.number),
-  id: PropTypes.string,
-  height: PropTypes.number,
-  width: PropTypes.number
+  center: PropTypes.arrayOf(PropTypes.number).isRequired,
+  id: PropTypes.string.isRequired,
+  height: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
+  zoom: PropTypes.number.isRequired
 }
 
 Map.defaultProps = {
