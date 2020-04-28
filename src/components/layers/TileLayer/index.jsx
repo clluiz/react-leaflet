@@ -10,14 +10,11 @@ const TileLayer = (props) => {
     tileLayer(url).addTo(map)
   }, [map])
 
-  return (
-    <div>
-    </div>
-  )
+  return <div></div>
 }
 
 TileLayer.propTypes = {
   url: PropTypes.string.isRequired
 }
 
-export default TileLayer;
+export default TileLayer

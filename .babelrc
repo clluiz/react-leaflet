@@ -14,17 +14,6 @@
     ["@babel/plugin-transform-runtime", {
       "helpers": false,
       "regenerator": true
-    }],
-    [
-      "file-loader",
-      {
-        "name": "[hash].[ext]",
-        "extensions": ["png", "jpg", "jpeg", "gif", "svg"],
-        "publicPath": "/public",
-        "outputPath": "/public",
-        "context": "",
-        "limit": 0
-      }
-    ]
+    }]
   ]
 }

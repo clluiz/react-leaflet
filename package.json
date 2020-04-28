@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build:lib": "webpack --config config/umd.js"
+    "build:lib": "webpack --config config/umd.js",
+    "prettier": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "files": [
     "./dist"
@@ -30,7 +31,9 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-file-loader": "^2.0.0",
     "css-loader": "^3.5.3",
+    "husk": "^0.5.3",
     "leaflet": "^1.6.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "webpack-cli": "^3.3.11"
   },
@@ -38,6 +41,10 @@
     "react": "^16.13.1",
     "leaflet": "^1.6.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
   }
 }

@@ -1,13 +1,13 @@
 import React from 'react'
 import Map from './index'
-import TileLayer from '../layers/TileLayer';
+import TileLayer from '../layers/TileLayer'
 
 export default {
   component: Map,
   title: 'Map',
   // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/,
-};
+  excludeStories: /.*Data$/
+}
 
 export const mapData = {
   height: 512,
@@ -18,9 +18,8 @@ export const mapData = {
 
 export const Empty = () => <Map {...mapData} />
 
-export const WithTileLayer = () => 
+export const WithTileLayer = () => (
   <Map {...mapData}>
-      <TileLayer 
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
-      />
+    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
   </Map>
+)

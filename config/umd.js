@@ -1,7 +1,7 @@
 'use strict'
 
-const Webpack = require('webpack');
-const { join, resolve } = require('path');
+const Webpack = require('webpack')
+const { join, resolve } = require('path')
 
 module.exports = {
   entry: join(__dirname, '..', 'src', 'index.js'),
@@ -52,4 +52,4 @@ module.exports = {
     modules: [resolve(__dirname), '..', 'node_modules'],
     extensions: ['.js', '.jsx']
   }
-};
+}
