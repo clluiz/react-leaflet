@@ -32,7 +32,7 @@ const Map = (props) => {
             React.cloneElement(child, { map: mapInstance })
           )}
       </>
-        </>
+    </>
   )
 }
 
