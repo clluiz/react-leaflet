@@ -11,8 +11,8 @@ const TileLayer = (props) => {
   }, [map])
 
   return (
-    <>
-    </>
+    <div>
+    </div>
   )
 }
 

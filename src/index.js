@@ -1,7 +1,7 @@
 import Map from './components/Map'
 import TileLayer from './components/layers/TileLayer'
 
-export default {
+export {
   Map,
   TileLayer
 }
