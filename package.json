@@ -50,7 +50,7 @@
   "dependencies": {},
   "husky": {
     "hooks": {
-      "pre-push": "npm run prettier"
+      "pre-commit": "npm run prettier"
     }
   }
 }

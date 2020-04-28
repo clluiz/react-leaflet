@@ -8,7 +8,7 @@ import 'leaflet/dist/leaflet.css'
 const Map = (props) => {
   const mapRef = useRef(null)
   const [mapInstance, setMapInstance] = useState(null)
-  
+
   useEffect(() => {
     setMapInstance(
       map(mapRef.current, {

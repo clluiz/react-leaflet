@@ -5,8 +5,8 @@ import { tileLayer } from 'leaflet'
 
 const TileLayer = (props) => {
   const { map, url } = props
-  
-    useEffect(() => {
+
+  useEffect(() => {
     tileLayer(url).addTo(map)
   }, [map])
 
