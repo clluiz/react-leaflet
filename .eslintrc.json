@@ -1,0 +1,10 @@
+{
+  "extends": ["prettier", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": 2
+  }
+}

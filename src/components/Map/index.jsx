@@ -8,7 +8,7 @@ import 'leaflet/dist/leaflet.css'
 const Map = (props) => {
   const mapRef = useRef(null)
   const [mapInstance, setMapInstance] = useState(null)
-
+  
   useEffect(() => {
     setMapInstance(
       map(mapRef.current, {
@@ -38,6 +38,7 @@ const Map = (props) => {
 
 Map.propTypes = {
   center: PropTypes.arrayOf(PropTypes.number).isRequired,
+  children: PropTypes.array,
   id: PropTypes.string.isRequired,
   height: PropTypes.number.isRequired,
   width: PropTypes.number.isRequired,
