@@ -15,18 +15,18 @@ const Map = (props) => {
   }, [])
 
   return (
-    <div>
+    <>
       <div 
         id={props.id}
         ref={mapRef} 
         style={{ width: props.width, height: props.height }}>
       </div>
-      <div>
+      <>
           {
             mapInstance && React.Children.map(props.children, child => React.cloneElement(child, { map: mapInstance }))
           }
-      </div>
-    </div>
+      </>
+    </>
   )
 }
 
